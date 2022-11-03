@@ -1,0 +1,96 @@
+.container {
+  width: 100%;
+  height: 100vh;
+}
+.container .navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+.container .navbar .logo {
+  width: 350px;
+}
+.container .navbar .menu {
+  display: flex;
+  gap: 50px;
+}
+.container .navbar .menu li {
+  list-style: none;
+}
+.container .navbar .menu li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #4B321D;
+  line-height: 22px;
+}
+.container .block {
+  width: 100%;
+}
+.container .block .box {
+  width: 100%;
+  height: 150%;
+  padding: 0px;
+}
+.container .block .box img {
+  width: 90%;
+  height: 700px;
+  padding: 0px 55px;
+}
+.container .block .box h1 {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 100px;
+  color: #4B321D;
+  padding: 0px 100px;
+}
+.container .block .box button {
+  color: #4B321D;
+  border: 2px solid #4B321D;
+  border-radius: 3px;
+  width: 100px;
+  height: 35px;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 0px 90px;
+  background-color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.container .block .box button:hover {
+  box-shadow: 0 0 5px #4B321D;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .container .navbar {
+    flex-direction: column;
+    width: 100%;
+  }
+  .container .navbar .logo {
+    flex-direction: column;
+  }
+  .container .block {
+    width: 100%;
+  }
+  .container .block .box {
+    width: 100%;
+  }
+  .container .block .box img {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+  }
+  .container .block .box h1 {
+    font-size: 25px;
+    padding: 0;
+    line-height: 50px;
+    text-align: center;
+    margin: 20px 0px;
+  }
+}/*# sourceMappingURL=git.css.map */

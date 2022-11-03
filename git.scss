@@ -1,0 +1,100 @@
+
+.container{
+    width: 100%;
+    height: 100vh;
+    .navbar{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: sans-serif;
+        font-weight: 400;
+        .logo{
+            width: 350px;
+        }
+        .menu{
+            display: flex;
+            gap: 50px;
+            li{ 
+                list-style: none;
+                a{
+                   font-size: 18px;
+                    text-decoration: none;
+                    color:#4B321D;
+                    line-height:22px;
+                }
+
+            }
+        }
+    }
+    .block{
+        width: 100%;
+        .box{
+            width:100%;
+            height: 150%;
+            padding: 0px ;
+            img{
+                width: 90%;
+                height:700px;
+                padding: 0px 55px;
+            }
+            
+        h1{
+            font-weight: 400;
+            font-size: 80px;
+            line-height: 100px;
+            color: #4B321D;
+            padding: 0px 100px;
+        }
+        button{
+            color: #4B321D;
+            border: 2px solid #4B321D;
+            border-radius: 3px;
+            width: 100px;
+            height: 35px;
+            font-weight: 400;
+            line-height: 29px;
+            margin: 0px 90px;
+            background-color: #fff;
+            transition: 0.4s;
+            cursor: pointer;
+            &:hover{
+                box-shadow: 0 0 5px #4B321D;
+                
+            }
+        }
+    }
+    }
+}
+
+@media screen and (max-width:600px){
+    .container{
+        width: 100%;
+        .navbar{
+         flex-direction: column;
+         width: 100%;
+         .logo{
+            flex-direction: column;
+         }
+        }
+        .block{
+            width: 100%;
+            .box{
+                width: 100%;
+                img{
+                    width: 100%;
+                    height:100%;
+                    padding: 0px;
+                }
+                h1{
+                    font-size: 25px;
+                    padding: 0;
+                    line-height: 50px;
+                    text-align: center;
+                    margin: 20px 0px;
+                }
+            }
+        }
+    }
+}
